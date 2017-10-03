@@ -1,0 +1,12 @@
+CONFIGURACION INICIAL(Solo la primera vez que creamos el repo)
+git config --global user.name "Chipana007"
+git config --global user.email "rickgrames@gmail.com"
+git config --global push.defaults simple
+
+AHORA DESPUES DE HACER ALGUN CAMBIO 
+ubicar el cambio
+git add .
+git commit -m "comentario"
+git push ò git push origin master
+
+ESO ES TODO

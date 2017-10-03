@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_scaner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.horus.proyectosismors.Scaner">
+
+    <Button
+        android:text=""
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/button" />
+
+    <ImageView
+        android:layout_width="407dp"
+        android:layout_height="126dp"
+        app:srcCompat="@drawable/liga2"
+        android:id="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        app:srcCompat="@drawable/scaner"
+        android:id="@+id/imageView4"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:text="EscanerQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="EscanerQR" />
+
+
+</LinearLayout>
