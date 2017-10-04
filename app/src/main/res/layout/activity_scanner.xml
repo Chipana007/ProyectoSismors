@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_menu"
+    android:id="@+id/activity_scanner"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/photo"
-    tools:context="com.example.horus.proyectosismors.Menu">
-
+    tools:context="com.example.horus.proyectosismors.Scanner">
 
     <TextView
         android:text="ELIGE UNA DE LAS SIGUIENTE OPCIONES"
@@ -24,32 +21,14 @@
         android:textColorLink="@color/colorPrimary" />
 
     <Button
-        android:text="USAR EL ESCANER"
+        android:text="SCANEAR BARCODE O QR"
         android:layout_weight="1"
         android:textColor="#fff"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@android:color/holo_blue_light"
         android:layout_marginBottom="5dp"
-        android:id="@+id/btnScanner" />
-    <Button
-        android:text="REGISTRO"
-        android:textColor="#fff"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:id="@+id/btnRegistro"
-        android:background="@android:color/darker_gray"
-        android:layout_marginBottom="5dp" />
+        android:onClick="EscanerQR" />
 
-    <Button
-        android:text="SALIR"
-        android:textColor="#fff"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:id="@+id/btnSalir"
-        android:background="@color/colorAccent"
-        android:layout_marginBottom="5dp" />
 
 </LinearLayout>

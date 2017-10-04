@@ -1,46 +1,48 @@
 package com.example.horus.proyectosismors;
 
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.zxing.Result;
 
-import me.dm7.barcodescanner.zxing.ZXingScannerView;
+public class Menu extends AppCompatActivity{
 
-public class Menu extends AppCompatActivity implements ZXingScannerView.ResultHandler{
-    private ZXingScannerView escanerView;
+    Button scanner;
+    Button registro;
+    Button salir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        scanner = (Button)findViewById(R.id.btnScanner);
+        scanner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent s = new Intent(Menu.this, Scanner.class);
+                startActivity(s);
+            }
+        });
+
+        registro = (Button)findViewById(R.id.btnRegistro);
+        registro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent r = new Intent(Menu.this, Registro.class);
+                startActivity(r);
+            }
+        });
+
+        salir = (Button)findViewById(R.id.btnSalir);
+        salir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        escanerView.stopCamera();
-    }
-
-    public void EscanerQR(View view){
-        escanerView = new ZXingScannerView(this);
-        setContentView(escanerView);
-        escanerView.setResultHandler(this);
-        escanerView.startCamera();
-    }
-
-    @Override
-    public void handleResult(Result result) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Resultados del escaner");
-        builder.setMessage("Resultado "+result.getText()+"\n"+"formato "+result.getBarcodeFormat());
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-        escanerView.resumeCameraPreview(this);
-
-    }
 }
