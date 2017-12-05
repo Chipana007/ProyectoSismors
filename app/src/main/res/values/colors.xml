@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#fdfdfd</color>
+    <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#ff000d</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorApp">#FFFFFF</color>
+    <color name="colorAzul">#1933FE</color>
+    <color name="botonsalida">#FC1418</color>
+    <color name="botontuto">#0490EE</color>
+    <color name="plata">#ECECEC</color>
+    <color name="antes">#6E6E6E</color>
+    <color name="ahora">#FF4000</color>
+    <color name="serio">#212221</color>
+    <color name="wong">#DF0101</color>
+    <color name="wong_ocuro">#1C1C1C</color>
+    <color name="celeste">#18AEFE</color>
+    <color name="naranja">#FE893B</color>
 </resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_conection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.horus.interfazinicio.ConectionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="SUMA DE NUMEROS"
+                android:textSize="30dp"
+                android:layout_marginBottom="20sp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:text="NUMERO 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+
+            <EditText
+                android:id="@+id/campo_texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="Ingresa el primer numero" />
+
+            <TextView
+                android:text="NUMERO 2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" />
+
+            <EditText
+                android:id="@+id/campo_texto2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="Ingresa el segungo numero" />
+
+            <TextView
+                android:text="Resultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/resultado" />
+
+            <Button
+                android:text="WS SUMA"
+                android:background="#0517A5"
+                android:textColor="#fff"
+                android:layout_width="250dp"
+                android:layout_marginTop="15dp"
+                android:onClick="EnviarOnclickSuma"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/suma" />
+
+            <TextView
+                android:text="Ingresa el codigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/barcode" />
+
+            <EditText
+                android:id="@+id/campo_texto3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="Ingresa el cogigo de barras" />
+
+            <TextView
+                android:text="ResulBC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/resultadoBC" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/lista"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:text="ENVIAR CODIGO"
+                android:background="#01759D"
+                android:textColor="#fff"
+                android:layout_width="250dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/enviarcodigo" />
+
+            <Button
+                android:text="SALIR"
+                android:background="#FD0101"
+                android:textColor="#fff"
+                android:layout_width="250dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/salir" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,55 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_menu"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/photo"
-    tools:context="com.example.horus.proyectosismors.Menu">
-
-
-    <TextView
-        android:text="ELIGE UNA DE LAS SIGUIENTE OPCIONES"
-        android:layout_weight="5"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:id="@+id/textView"
-        android:layout_marginTop="50dp"
-        android:textColor="#ff0101"
-        android:textAlignment="center"
-        android:layout_marginBottom="50dp"
-        android:textSize="19sp"
-        android:textColorLink="@color/colorPrimary" />
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo_unico"
+    android:layout_height="match_parent"
+    tools:context="com.example.horus.interfazinicio.MenuActivity">
 
     <Button
-        android:text="USAR EL ESCANER"
-        android:layout_weight="1"
-        android:textColor="#fff"
-        android:layout_width="match_parent"
+        android:text="SCANEAR BARCODE O QR"
+        android:layout_weight="0.05"
+        android:textColor="@color/colorApp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/naranja"
+        android:layout_width="280dp"
         android:layout_height="0dp"
-        android:background="@android:color/holo_blue_light"
-        android:layout_marginBottom="5dp"
-        android:id="@+id/btnScanner" />
+        android:layout_marginTop="350dp"
+        android:background="@drawable/boton_redondeado"
+        android:layout_marginBottom="10dp"
+        android:onClick="EscanerQR"
+        android:id="@+id/scaner" />
     <Button
-        android:text="REGISTRO"
-        android:textColor="#fff"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
+        android:text="TUTORIAL"
+        android:layout_weight="0.05"
+        android:textColor="@color/colorApp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/celeste"
+        android:layout_width="280dp"
         android:layout_height="0dp"
-        android:id="@+id/btnRegistro"
-        android:background="@android:color/darker_gray"
-        android:layout_marginBottom="5dp" />
+        android:onClick="lanzar"
+        android:background="@drawable/boton_redondeado"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/tutorial" />
 
     <Button
         android:text="SALIR"
-        android:textColor="#fff"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
+        android:layout_weight="0.05"
+        android:textColor="@color/colorApp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/botonsalida"
+        android:layout_width="280dp"
         android:layout_height="0dp"
-        android:id="@+id/btnSalir"
-        android:background="@color/colorAccent"
-        android:layout_marginBottom="5dp" />
+        android:background="@drawable/boton_redondeado"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/salir" />
 
 </LinearLayout>
